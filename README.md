@@ -1,4 +1,4 @@
-# Vector Vector
+# Vector 
 
  <strong>TESTAVIMAS</strong><br>
  Testavimo sistemos parametrai:<br>
@@ -54,6 +54,94 @@ vektorius: 3, klasė: 3<br>
     klase.pop_back();
     
    vektorius: 12, klasė: 12<br>
+
+<strong>SPARTOS ANALIZĖ</strong><br>
+<strong>std::vector</strong>
+<table>
+ <tr>
+ <th>žingsnis</th>
+ <th>10000</th>
+ <th>100000</th>
+ <th>1000000</th>
+ <th>10000000</th>
+ <th>100000000</th>
+ </tr>
+ <tr>
+ <td>Greitis (s)</th>
+ <td>0.001</td>
+ <td>0.009</td>
+ <td>0.049</td>
+ <td>0.402</td>
+ <td>3.628</td>
+ </tr>
+ </table>
+  <br>
+  <strong>Vector klasė</strong>
+<table>
+ <tr>
+ <th>žingsnis</th>
+ <th>10000</th>
+ <th>100000</th>
+ <th>1000000</th>
+ <th>10000000</th>
+ <th>100000000</th>
+ </tr>
+ <tr>
+ <td>Greitis (s)</th>
+ <td>0.0003</td>
+ <td>0.003</td>
+ <td>0.017</td>
+ <td>0.211</td>
+ <td>1.929</td>
+ </tr>
+ </table>
+<br>
+<strong>ATMINTIES PERSKIRSTYMAS</strong><br>
+std::vector perskirstymas įvyksta 28 kartus.
+<br>
+Vector klasėje perskirstymas įvyksta 100000000 kartų.
+<br>
+<strong>spartos analizė su 100000 studentų įrašų std::vector</strong>
+<table>
+ <tr>
+ <th>žingsnis</th>
+ <th>100000</th>
+ </tr>
+ <tr>
+ <td>duomenų nuskaitymas iš failų į atitinkamą konteinerį</th>
+ <td>0.416</td>
+ </tr>
+ <tr>
+ <td>studentų rūšiavimas didėjimo tvarka konteineryje</th>
+ <td>0.031</td>
+ </tr>
+ <tr>
+ <td>studentų skirstymas į dvi grupes</th>
+ <td>0.011</td>
+ </tr>
+ </table>
+  <br>
+<strong>spartos analizė su 100000 studentų įrašų Vector</strong>
+<table>
+ <tr>
+ <th>žingsnis</th>
+ <th>100000</th>
+ </tr>
+ <tr>
+ <td>duomenų nuskaitymas iš failų į atitinkamą konteinerį</th>
+ <td>0.387</td>
+ </tr>
+ <tr>
+ <td>studentų rūšiavimas didėjimo tvarka konteineryje</th>
+ <td>0.039</td>
+ </tr>
+ <tr>
+ <td>studentų skirstymas į dvi grupes</th>
+ <td>0.007</td>
+ </tr>
+ </table>
+  <br>
+
 
  <br>
  <strong>NAUDOJIMOSI ŽINGSNIAI:</strong>
